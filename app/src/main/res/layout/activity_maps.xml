@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/transparency_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/transparency" />
+
+        <SeekBar
+            android:id="@+id/transparencySeekBar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/transparency_text"
+            android:layout_toRightOf="@+id/transparency_text" />
+
+        <SeekBar
+            android:id="@+id/rotationSeekBar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/transparency_text"
+            android:layout_toRightOf="@+id/transparency_text"
+            android:layout_below="@+id/transparencySeekBar" />
+
+        <Button
+            android:id="@+id/switchImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rotationSeekBar"
+            android:onClick="switchImage"
+            android:text="@string/switch_image" />
+
+        <Button
+            android:id="@+id/downloadImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rotationSeekBar"
+            android:layout_toRightOf="@+id/switchImage"
+            android:onClick="switchImage"
+            android:text="@string/download_image" />
+
+        <CheckBox
+            android:id="@+id/toggleClickability"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rotationSeekBar"
+            android:layout_toRightOf="@+id/downloadImage"
+            android:checked="true"
+            android:onClick="toggleClickability"
+            android:text="@string/clickable" />
+
+        <EditText
+            android:id="@+id/LatInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toggleClickability"
+            android:hint="Latitude"/>
+
+        <EditText
+            android:id="@+id/LngInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/LatInput"
+            android:hint="Longitude"/>
+
+        <Button
+            android:id="@+id/EnterLatLng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/LngInput"
+            android:text="Enter LatLng" />
+
+        <Button
+            android:id="@+id/ClearImages"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/EnterLatLng"
+            android:layout_alignBottom="@+id/EnterLatLng"
+            android:layout_toEndOf="@+id/EnterLatLng"
+            android:text="Clear Map" />
+
+    </RelativeLayout>
+
+    <fragment
+        android:id="@+id/map"
+        class="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

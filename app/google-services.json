@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "669812473932",
+    "project_id": "godhelpme-76145",
+    "storage_bucket": "godhelpme-76145.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:669812473932:android:58a5e048261ff0e6a0b4e9",
+        "android_client_info": {
+          "package_name": "com.example.godhelpme"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "669812473932-222cj45hk0ugheqtq70bct8jtb2ihbp4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVAu8lpyWeeZfDOQUBvqFI7A7RCfW5gZ8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "669812473932-222cj45hk0ugheqtq70bct8jtb2ihbp4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Upload Floorplan</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="transparency">Transparency</string>
+    <string name="switch_image">Switch Image</string>
+    <string name="clickable">Clickable</string>
+    <string name="download_image">Download Image</string>
+</resources>
